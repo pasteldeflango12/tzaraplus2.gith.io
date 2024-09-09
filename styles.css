@@ -1,0 +1,173 @@
+:root {
+    --rosa-bebe: #F6C1C1;
+    --azul-bebe: #A0D6F1;
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-rosa: #F6C1C1;
+    --cor-de-fundo: #A0D6F1; /* Azul bebê */
+    --fonte-principal: 'Inter';
+    --botao-rosa-efeito: #F8D6D6;
+    --texto-escuro: #333333; /* Cor do texto escuro para contraste */
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--texto-escuro); /* Texto em cor escura */
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-color: var(--cor-de-fundo); /* Fundo azul bebê */
+    margin-top: 150px;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-rosa);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--texto-escuro); /* Título em cor escura */
+}
+
+.container__imagem:first-of-type {
+    width: 69%; /* Ajusta o tamanho da primeira imagem para 69% do seu tamanho original */
+    margin: 1em auto; /* Centraliza a imagem horizontalmente */
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.assinatura-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.assinatura-imagem {
+    margin-right: 1em; /* Espaço entre a imagem e o botão */
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--texto-escuro); /* Título em cor escura */
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--texto-escuro); /* Texto descritivo em cor escura */
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--texto-escuro); /* Título em cor escura */
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--texto-escuro); /* Itens da lista em cor escura */
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--texto-escuro); /* Links em cor escura */
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--texto-escuro); /* Texto do rodapé em cor escura */
+    font-size: 14px;
+}
+
+.lista__link a:hover {
+    color: var(--botao-rosa);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-rosa-efeito);
+    color: var(--cor-de-fundo);
+}
